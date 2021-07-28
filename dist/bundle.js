@@ -16,7 +16,7 @@
   \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  font-family: 'Courier New', Courier, monospace;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -106,7 +106,57 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _js_sampleScoreList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/sampleScoreList */ \"./src/js/sampleScoreList.js\");\n/* harmony import */ var _js_scoreList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/scoreList */ \"./src/js/scoreList.js\");\n/* harmony import */ var _js_scoreListWidget__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/scoreListWidget */ \"./src/js/scoreListWidget.js\");\n\n\n\n\n\nconst appInit = () => {\n  const sampleScores = (0,_js_sampleScoreList__WEBPACK_IMPORTED_MODULE_1__.default)();\n  const scoreList = new _js_scoreList__WEBPACK_IMPORTED_MODULE_2__.default(sampleScores);\n  const scoreListWigdet = new _js_scoreListWidget__WEBPACK_IMPORTED_MODULE_3__.default();\n  scoreListWigdet.update(scoreList);\n};\n\nwindow.addEventListener('load', appInit);\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/sampleScoreList.js":
+/*!***********************************!*\
+  !*** ./src/js/sampleScoreList.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst sampleScoreList = () => [\n  {\n    name: 'Jane Doe',\n    score: 125,\n  },\n  {\n    name: 'Robert Weiss',\n    score: 400,\n  },\n  {\n    name: 'Pascal Monieux',\n    score: 330,\n  },\n  {\n    name: 'Yuri Nakamora',\n    score: 250,\n  },\n];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sampleScoreList);\n\n//# sourceURL=webpack://leaderboard/./src/js/sampleScoreList.js?");
+
+/***/ }),
+
+/***/ "./src/js/score.js":
+/*!*************************!*\
+  !*** ./src/js/score.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Score)\n/* harmony export */ });\nclass Score {\n  constructor(name, score) {\n    this.scorer = name;\n    this.points = score;\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/score.js?");
+
+/***/ }),
+
+/***/ "./src/js/scoreList.js":
+/*!*****************************!*\
+  !*** ./src/js/scoreList.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ScoreList)\n/* harmony export */ });\n/* harmony import */ var _score__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./score */ \"./src/js/score.js\");\n\n\nclass ScoreList {\n  constructor(scoreList = []) {\n    this.list = [];\n    scoreList.forEach((score) => {\n      this.list.push(new _score__WEBPACK_IMPORTED_MODULE_0__.default(score.name, score.score));\n    });\n  }\n\n  add(form) {\n    this.list.push(new _score__WEBPACK_IMPORTED_MODULE_0__.default(form.name, form.score));\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/scoreList.js?");
+
+/***/ }),
+
+/***/ "./src/js/scoreListWidget.js":
+/*!***********************************!*\
+  !*** ./src/js/scoreListWidget.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ScoreListWidget)\n/* harmony export */ });\n/* harmony import */ var _scoreWigdet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scoreWigdet */ \"./src/js/scoreWigdet.js\");\n\n\nclass ScoreListWidget {\n  constructor() {\n    this.scoreListWidget = document.getElementById('score-list');\n  }\n\n  update(scoreList) {\n    this.scoreListWidget.innerHTML = '';\n    scoreList.list.forEach((score) => {\n      this.append(new _scoreWigdet__WEBPACK_IMPORTED_MODULE_0__.default(score));\n    });\n  }\n\n  append(scoreWigdet) {\n    this.scoreListWidget.appendChild(scoreWigdet.element);\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/scoreListWidget.js?");
+
+/***/ }),
+
+/***/ "./src/js/scoreWigdet.js":
+/*!*******************************!*\
+  !*** ./src/js/scoreWigdet.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ScoreWidget)\n/* harmony export */ });\nclass ScoreWidget {\n  constructor(score) {\n    this.li = document.createElement('li');\n    this.li.className = 'list-item';\n    this.li.textContent = `${score.scorer}: ${score.points}`;\n  }\n\n  get element() {\n    return this.li;\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/scoreWigdet.js?");
 
 /***/ })
 
