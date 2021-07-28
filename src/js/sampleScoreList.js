@@ -17,4 +17,4 @@ const sampleScoreList = () => [
   },
 ];
 
-export { sampleScoreList };
+export default sampleScoreList;
