@@ -2,9 +2,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-h1{
+h1 {
   font-size: 3rem;
-  margin: 1.5em 0em;
+  margin: 1.5em 0;
 }
 
 h2 {
@@ -21,7 +21,8 @@ h2 {
   margin: 0 2rem;
 }
 
-.main-content, .scores-header {
+.main-content,
+.scores-header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -35,7 +36,8 @@ h2 {
   margin: 0;
 }
 
-.scores-header, .add-your-score-header {
+.scores-header,
+.add-your-score-header {
   margin: 1.5rem 0;
 }
 
@@ -46,7 +48,7 @@ h2 {
 }
 
 #score-list li {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 #score-list li:nth-child(even) {
@@ -61,16 +63,23 @@ form {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-
 }
 
-form button, .scores-header button {
+button {
   display: block;
   width: 30%;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
   background-color: white;
   box-shadow: 3px 3px 1px black;
+}
+
+button:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+button:active{
+  box-shadow: none;
 }
 
 input[type='text'] {
@@ -78,7 +87,6 @@ input[type='text'] {
   border: 3px solid black;
   width: 100%;
   margin-bottom: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
 }
-
