@@ -1,5 +1,4 @@
 import ListItemWidget from './listItemWigdet';
-import Game from './game';
 
 export default class ListWidget {
   static listWidget;

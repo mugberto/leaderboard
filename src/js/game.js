@@ -1,5 +1,5 @@
-import ListWidget from "./listWidget";
-import showResponseMsg from "./messageWidget";
+import ListWidget from './listWidget';
+import showResponseMsg from './messageWidget';
 
 export default class Game {
   static gameID = localStorage.getItem('gameID') || '';
@@ -16,9 +16,9 @@ export default class Game {
         },
       });
       const json = await response.json();
-      Game.gameID = json.result.split(':')[1].trim().split(' ')[0];
+      [,,, Game.gameID] = json.result.split(' ');
       localStorage.setItem('gameID', Game.gameID);
-    }else {
+    } else {
       this.getScoreList();
     }
   }

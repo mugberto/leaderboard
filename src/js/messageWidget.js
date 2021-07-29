@@ -1,5 +1,5 @@
 const showResponseMsg = (message) => {
-  const form = document.querySelector('form')
+  const form = document.querySelector('form');
   const firstInput = document.getElementById('name');
   const p = document.createElement('p');
   p.textContent = message;
@@ -7,5 +7,5 @@ const showResponseMsg = (message) => {
   setTimeout(() => {
     p.remove();
   }, 5000);
-}
+};
 export default showResponseMsg;
