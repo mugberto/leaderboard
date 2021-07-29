@@ -1,14 +1,14 @@
 import './css/style.css';
-import ScoreListWidget from './js/scoreListWidget';
+import ListWidget from './js/listWidget';
 import Game from './js/game';
 import setListRefresher from './js/refresh';
 import form from './js/form';
 
 const appInit = () => {
-  const scoreListWigdet = new ScoreListWidget();
+  const listWigdet = new ListWidget();
   Game.start('Racing Game');
-  scoreListWigdet.update();
-  setListRefresher(scoreListWigdet);
+  listWigdet.update();
+  setListRefresher(listWigdet);
   form();
 };
 

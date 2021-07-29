@@ -1,4 +1,4 @@
-export default class ScoreWidget {
+export default class ListItemWidget {
   constructor(score) {
     this.listItem = document.createElement('li');
     this.listItem.className = 'list-item';
