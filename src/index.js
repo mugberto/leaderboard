@@ -7,7 +7,7 @@ import form from './js/form';
 const appInit = () => {
   const scoreListWigdet = new ScoreListWidget();
   Game.start('Racing Game');
-  Game.getScoreList().then((list) => scoreListWigdet.update(list));
+  scoreListWigdet.update();
   setListRefresher(scoreListWigdet);
   form();
 };
