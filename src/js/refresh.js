@@ -1,9 +1,9 @@
-import ListWidget from "./listWidget";
+import Game from "./game";
 
 const setListRefresher = (scoreListWigdet) => {
   const btn = document.getElementById('refresh-btn');
   btn.addEventListener('click', () => {
-    ListWidget.update();
+    Game.getScoreList();
   });
 };
 

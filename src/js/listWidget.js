@@ -8,10 +8,7 @@ export default class ListWidget {
     this.listWidget = document.getElementById('score-list');
   }
 
-  static async update() {
-    const response = await Game.getScoreList();
-    const json = await response.json();
-    const scoreList = json.result;
+  static update(scoreList) {
     this.listWidget.innerHTML = '';
     scoreList.forEach((score) => {
       this.append(new ListItemWidget(score));
