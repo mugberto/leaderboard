@@ -1,6 +1,4 @@
 import './css/style.css';
-import sampleScoreList from './js/sampleScoreList';
-import ScoreList from './js/scoreList';
 import ScoreListWidget from './js/scoreListWidget';
 import Game from './js/game';
 
