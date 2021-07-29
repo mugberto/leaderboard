@@ -3,7 +3,7 @@ export default class Game {
 
   static async start(name) {
     if (localStorage.getItem('gameID') == null) {
-      let response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
+      const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
         method: 'POST',
         body: JSON.stringify({
           name,
@@ -12,7 +12,7 @@ export default class Game {
           'Content-type': 'application/json; charset=UTF-8',
         },
       });
-      let json = await response.json()
+      const json = await response.json();
       Game.gameID = json.result.split(':')[1].trim().split(' ')[0];
       localStorage.setItem('gameID', Game.gameID);
     }
@@ -20,20 +20,20 @@ export default class Game {
 
   static postScore(name, score) {
     fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`, {
-        method: 'POST',
-        body: JSON.stringify({
-          user: name,
-          score,
-        }),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      })
+      method: 'POST',
+      body: JSON.stringify({
+        user: name,
+        score,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
       .then((response) => response.json())
       .then((json) => console.log(json));
   }
 
   static getScoreList() {
-    return fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`)
+    return fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`);
   }
 }

@@ -5,10 +5,10 @@ import setListRefresher from './js/refresh';
 import form from './js/form';
 
 const appInit = () => {
-  const listWigdet = new ListWidget();
+  ListWidget.init();
   Game.start('Racing Game');
-  listWigdet.update();
-  setListRefresher(listWigdet);
+  ListWidget.update();
+  setListRefresher();
   form();
 };
 

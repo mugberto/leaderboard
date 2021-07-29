@@ -2,21 +2,23 @@ import ListItemWidget from './listItemWigdet';
 import Game from './game';
 
 export default class ListWidget {
-  constructor() {
+  static listWidget;
+
+  static init() {
     this.listWidget = document.getElementById('score-list');
   }
 
-  async update() {
-    let response = await Game.getScoreList();
-    let json = await response.json();
-    let scoreList = json.result;
+  static async update() {
+    const response = await Game.getScoreList();
+    const json = await response.json();
+    const scoreList = json.result;
     this.listWidget.innerHTML = '';
     scoreList.forEach((score) => {
       this.append(new ListItemWidget(score));
     });
   }
 
-  append(scoreWigdet) {
+  static append(scoreWigdet) {
     this.listWidget.appendChild(scoreWigdet.listItem);
   }
 }
