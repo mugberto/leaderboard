@@ -1,13 +1,14 @@
 import './css/style.css';
-import sampleScoreList from './js/sampleScoreList';
-import ScoreList from './js/scoreList';
-import ScoreListWidget from './js/scoreListWidget';
+import ListWidget from './js/listWidget';
+import Game from './js/game';
+import setListRefresher from './js/refresh';
+import form from './js/form';
 
 const appInit = () => {
-  const sampleScores = sampleScoreList();
-  const scoreList = new ScoreList(sampleScores);
-  const scoreListWigdet = new ScoreListWidget();
-  scoreListWigdet.update(scoreList);
+  ListWidget.init();
+  Game.start('Racing Game');
+  setListRefresher();
+  form();
 };
 
 window.addEventListener('load', appInit);
