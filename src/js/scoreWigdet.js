@@ -1,11 +1,7 @@
 export default class ScoreWidget {
   constructor(score) {
-    this.li = document.createElement('li');
-    this.li.className = 'list-item';
-    this.li.textContent = `${score.scorer}: ${score.points}`;
-  }
-
-  get element() {
-    return this.li;
+    this.listItem = document.createElement('li');
+    this.listItem.className = 'list-item';
+    this.listItem.textContent = `${score.user}: ${score.score}`;
   }
 }
