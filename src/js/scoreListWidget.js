@@ -7,12 +7,12 @@ export default class ScoreListWidget {
 
   update(scoreList) {
     this.scoreListWidget.innerHTML = '';
-    scoreList.list.forEach((score) => {
+    scoreList.forEach((score) => {
       this.append(new ScoreWidget(score));
     });
   }
 
   append(scoreWigdet) {
-    this.scoreListWidget.appendChild(scoreWigdet.element);
+    this.scoreListWidget.appendChild(scoreWigdet.listItem);
   }
 }
