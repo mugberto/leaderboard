@@ -3,7 +3,11 @@ import Game from './game';
 const form = () => {
   const submitBtn = document.getElementById('submit-score');
   submitBtn.addEventListener('click', () => {
-    Game.postScore(document.getElementById('name').value, document.getElementById('score').value);
+    const nameInput = document.getElementById('name');
+    const scoreInput = document.getElementById('score');
+    Game.postScore(nameInput.value, scoreInput.value);
+    nameInput.value = '';
+    scoreInput.value = '';
   });
 };
 

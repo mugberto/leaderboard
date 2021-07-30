@@ -1,3 +1,108 @@
 body {
   font-family: 'Courier New', Courier, monospace;
 }
+
+h1 {
+  font-size: 3rem;
+  margin: 1.5em 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.container {
+  width: 998px;
+  margin: 0 auto;
+}
+
+.main-content {
+  margin: 0 2rem;
+}
+
+.main-content,
+.scores-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.scores {
+  width: 50%;
+}
+
+.scores-header h2 {
+  margin: 0;
+}
+
+.scores-header,
+.add-your-score-header {
+  margin: 1.5rem 0;
+}
+
+#score-list {
+  list-style-type: none;
+  border: 3px solid black;
+  padding: 0;
+}
+
+#score-list li {
+  padding: 0.5rem;
+}
+
+#score-list li:nth-child(even) {
+  background-color: rgb(187, 187, 187);
+}
+
+.add-your-score {
+  width: 40%;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+button {
+  display: block;
+  width: 30%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: 3px 3px 1px black;
+}
+
+button:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+input[type='text'] {
+  box-sizing: border-box;
+  border: 3px solid black;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.alert-msg {
+  position: absolute;
+  margin: 0;
+  top: -1.6rem;
+  left: 0;
+  padding: 0.3rem;
+  background-color: gray;
+  font-size: 0.7rem;
+  border: 1px solid black;
+  z-index: 1000;
+}

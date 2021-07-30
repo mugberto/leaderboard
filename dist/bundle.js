@@ -16,7 +16,7 @@
   \*****************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  font-family: 'Courier New', Courier, monospace;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  font-family: 'Courier New', Courier, monospace;\\n}\\n\\nh1 {\\n  font-size: 3rem;\\n  margin: 1.5em 0;\\n}\\n\\nh2 {\\n  font-size: 2rem;\\n  margin: 0;\\n}\\n\\n.container {\\n  width: 998px;\\n  margin: 0 auto;\\n}\\n\\n.main-content {\\n  margin: 0 2rem;\\n}\\n\\n.main-content,\\n.scores-header {\\n  display: flex;\\n  flex-flow: row nowrap;\\n  justify-content: space-between;\\n}\\n\\n.scores {\\n  width: 50%;\\n}\\n\\n.scores-header h2 {\\n  margin: 0;\\n}\\n\\n.scores-header,\\n.add-your-score-header {\\n  margin: 1.5rem 0;\\n}\\n\\n#score-list {\\n  list-style-type: none;\\n  border: 3px solid black;\\n  padding: 0;\\n}\\n\\n#score-list li {\\n  padding: 0.5rem;\\n}\\n\\n#score-list li:nth-child(even) {\\n  background-color: rgb(187, 187, 187);\\n}\\n\\n.add-your-score {\\n  width: 40%;\\n}\\n\\nform {\\n  position: relative;\\n  display: flex;\\n  flex-flow: column nowrap;\\n  align-items: flex-end;\\n}\\n\\nbutton {\\n  display: block;\\n  width: 30%;\\n  padding: 0.5rem;\\n  font-size: 1rem;\\n  background-color: white;\\n  box-shadow: 3px 3px 1px black;\\n}\\n\\nbutton:hover {\\n  background-color: rgb(212, 212, 212);\\n}\\n\\nbutton:active {\\n  box-shadow: none;\\n}\\n\\ninput[type='text'] {\\n  box-sizing: border-box;\\n  border: 3px solid black;\\n  width: 100%;\\n  margin-bottom: 2rem;\\n  padding: 0.5rem;\\n  font-size: 1rem;\\n}\\n\\n.alert-msg {\\n  position: absolute;\\n  margin: 0;\\n  top: -1.6rem;\\n  left: 0;\\n  padding: 0.3rem;\\n  background-color: gray;\\n  font-size: 0.7rem;\\n  border: 1px solid black;\\n  z-index: 1000;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -106,7 +106,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _js_scoreListWidget__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/scoreListWidget */ \"./src/js/scoreListWidget.js\");\n/* harmony import */ var _js_game__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/game */ \"./src/js/game.js\");\n\n\n\n\nconst appInit = () => {\n  const scoreListWigdet = new _js_scoreListWidget__WEBPACK_IMPORTED_MODULE_1__.default();\n  _js_game__WEBPACK_IMPORTED_MODULE_2__.default.start('Racing Game');\n  _js_game__WEBPACK_IMPORTED_MODULE_2__.default.getScoreList().then((list) => scoreListWigdet.update(list));\n};\n\nwindow.addEventListener('load', appInit);\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _js_listWidget__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/listWidget */ \"./src/js/listWidget.js\");\n/* harmony import */ var _js_game__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/game */ \"./src/js/game.js\");\n/* harmony import */ var _js_refresh__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/refresh */ \"./src/js/refresh.js\");\n/* harmony import */ var _js_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/form */ \"./src/js/form.js\");\n\n\n\n\n\n\nconst appInit = () => {\n  _js_listWidget__WEBPACK_IMPORTED_MODULE_1__.default.init();\n  _js_game__WEBPACK_IMPORTED_MODULE_2__.default.start('Racing Game');\n  (0,_js_refresh__WEBPACK_IMPORTED_MODULE_3__.default)();\n  (0,_js_form__WEBPACK_IMPORTED_MODULE_4__.default)();\n};\n\nwindow.addEventListener('load', appInit);\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/form.js":
+/*!************************!*\
+  !*** ./src/js/form.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game */ \"./src/js/game.js\");\n\n\nconst form = () => {\n  const submitBtn = document.getElementById('submit-score');\n  submitBtn.addEventListener('click', () => {\n    const nameInput = document.getElementById('name');\n    const scoreInput = document.getElementById('score');\n    _game__WEBPACK_IMPORTED_MODULE_0__.default.postScore(nameInput.value, scoreInput.value);\n    nameInput.value = '';\n    scoreInput.value = '';\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);\n\n//# sourceURL=webpack://leaderboard/./src/js/form.js?");
 
 /***/ }),
 
@@ -116,27 +126,47 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Game)\n/* harmony export */ });\nclass Game {\n  static gameID = localStorage.getItem('gameID') || '';\n\n  static start(name) {\n    if (localStorage.getItem('gameID') == null) {\n      fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {\n          method: 'POST',\n          body: JSON.stringify({\n            name,\n          }),\n          headers: {\n            'Content-type': 'application/json; charset=UTF-8',\n          },\n        })\n        .then((response) => response.json())\n        .then((json) => Game.setGameID(json));\n    }\n  }\n\n  static setGameID(json) {\n    Game.gameID = json.result.split(':')[1].trim().split(' ')[0];\n    localStorage.setItem('gameID', Game.gameID);\n  }\n\n  static postScore(name, score) {\n    fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`, {\n        method: 'POST',\n        body: JSON.stringify({\n          user: name,\n          score,\n        }),\n        headers: {\n          'Content-type': 'application/json; charset=UTF-8',\n        },\n      })\n      .then((response) => response.json())\n      .then((json) => console.log(json));\n  }\n\n  static getScoreList() {\n    return fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`)\n      .then((response) => response.json())\n      .then((json) => json.result );\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/game.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Game)\n/* harmony export */ });\n/* harmony import */ var _listWidget__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./listWidget */ \"./src/js/listWidget.js\");\n/* harmony import */ var _messageWidget__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./messageWidget */ \"./src/js/messageWidget.js\");\n\n\n\nclass Game {\n  static gameID = localStorage.getItem('gameID') || '';\n\n  static async start(name) {\n    if (localStorage.getItem('gameID') == null) {\n      const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {\n        method: 'POST',\n        body: JSON.stringify({\n          name,\n        }),\n        headers: {\n          'Content-type': 'application/json; charset=UTF-8',\n        },\n      });\n      const json = await response.json();\n      [,,, Game.gameID] = json.result.split(' ');\n      localStorage.setItem('gameID', Game.gameID);\n    } else {\n      this.getScoreList();\n    }\n  }\n\n  static async postScore(name, score) {\n    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`, {\n      method: 'POST',\n      body: JSON.stringify({\n        user: name,\n        score,\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n    });\n    const json = await response.json();\n    (0,_messageWidget__WEBPACK_IMPORTED_MODULE_1__.default)(json.result);\n  }\n\n  static async getScoreList() {\n    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${Game.gameID}/scores`);\n    const json = await response.json();\n    _listWidget__WEBPACK_IMPORTED_MODULE_0__.default.update(json.result);\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/game.js?");
 
 /***/ }),
 
-/***/ "./src/js/scoreListWidget.js":
-/*!***********************************!*\
-  !*** ./src/js/scoreListWidget.js ***!
-  \***********************************/
+/***/ "./src/js/listItemWigdet.js":
+/*!**********************************!*\
+  !*** ./src/js/listItemWigdet.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ScoreListWidget)\n/* harmony export */ });\n/* harmony import */ var _scoreWigdet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scoreWigdet */ \"./src/js/scoreWigdet.js\");\n\n\nclass ScoreListWidget {\n  constructor() {\n    this.scoreListWidget = document.getElementById('score-list');\n  }\n\n  update(scoreList) {\n    this.scoreListWidget.innerHTML = '';\n    scoreList.forEach((score) => {\n      this.append(new _scoreWigdet__WEBPACK_IMPORTED_MODULE_0__.default(score));\n    });\n  }\n\n  append(scoreWigdet) {\n    this.scoreListWidget.appendChild(scoreWigdet.listItem);\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/scoreListWidget.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ListItemWidget)\n/* harmony export */ });\nclass ListItemWidget {\n  constructor(score) {\n    this.listItem = document.createElement('li');\n    this.listItem.className = 'list-item';\n    this.listItem.textContent = `${score.user}: ${score.score}`;\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/listItemWigdet.js?");
 
 /***/ }),
 
-/***/ "./src/js/scoreWigdet.js":
-/*!*******************************!*\
-  !*** ./src/js/scoreWigdet.js ***!
-  \*******************************/
+/***/ "./src/js/listWidget.js":
+/*!******************************!*\
+  !*** ./src/js/listWidget.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ScoreWidget)\n/* harmony export */ });\nclass ScoreWidget {\n  constructor(score) {\n    this.listItem = document.createElement('li');\n    this.listItem.className = 'list-item';\n    this.listItem.textContent = `${score.user}: ${score.score}`;\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/scoreWigdet.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ListWidget)\n/* harmony export */ });\n/* harmony import */ var _listItemWigdet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./listItemWigdet */ \"./src/js/listItemWigdet.js\");\n\n\nclass ListWidget {\n  static listWidget;\n\n  static init() {\n    this.listWidget = document.getElementById('score-list');\n  }\n\n  static update(scoreList) {\n    this.listWidget.innerHTML = '';\n    scoreList.forEach((score) => {\n      this.append(new _listItemWigdet__WEBPACK_IMPORTED_MODULE_0__.default(score));\n    });\n  }\n\n  static append(scoreWigdet) {\n    this.listWidget.appendChild(scoreWigdet.listItem);\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/js/listWidget.js?");
+
+/***/ }),
+
+/***/ "./src/js/messageWidget.js":
+/*!*********************************!*\
+  !*** ./src/js/messageWidget.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst showResponseMsg = (message) => {\n  const form = document.querySelector('form');\n  const firstInput = document.getElementById('name');\n  const p = document.createElement('p');\n  p.textContent = message;\n  p.className = 'alert-msg';\n  form.insertBefore(p, firstInput);\n  setTimeout(() => {\n    p.remove();\n  }, 4000);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showResponseMsg);\n\n//# sourceURL=webpack://leaderboard/./src/js/messageWidget.js?");
+
+/***/ }),
+
+/***/ "./src/js/refresh.js":
+/*!***************************!*\
+  !*** ./src/js/refresh.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game */ \"./src/js/game.js\");\n\n\nconst setListRefresher = () => {\n  const btn = document.getElementById('refresh-btn');\n  btn.addEventListener('click', () => {\n    _game__WEBPACK_IMPORTED_MODULE_0__.default.getScoreList();\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setListRefresher);\n\n//# sourceURL=webpack://leaderboard/./src/js/refresh.js?");
 
 /***/ })
 
