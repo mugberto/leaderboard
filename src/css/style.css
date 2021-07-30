@@ -60,6 +60,7 @@ h2 {
 }
 
 form {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
@@ -89,4 +90,16 @@ input[type='text'] {
   margin-bottom: 2rem;
   padding: 0.5rem;
   font-size: 1rem;
+}
+
+.alert-msg {
+  position: absolute;
+  margin: 0;
+  top: -1.6rem;
+  left: 0;
+  padding: .3rem;
+  background-color: gray;
+  font-size: .7rem;
+  border: 1px solid black;
+  z-index: 1000;
 }

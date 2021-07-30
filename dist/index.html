@@ -11,15 +11,17 @@
     <h1>Leaderboard</h1>
     <div class="main-content">
       <section class="scores">
-        <header>
+        <header class="scores-header">
           <h2>Recent scores</h2>
-          <button>Refresh</button>
+          <button id="refresh-btn">Refresh</button>
         </header>
         <ul id="score-list">
         </ul>
       </section>
-      <section class="Add-your-score">
-        <h2>Add your score</h2>
+      <section class="add-your-score">
+        <header class="add-your-score-header">
+          <h2>Add your score</h2>
+        </header>
         <form onsubmit="return false">
           <input type="text" name="name" id="name" placeholder="Your name" required>
           <input type="text" name="score" id="score" placeholder="Your score" required>
