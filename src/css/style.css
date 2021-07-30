@@ -79,7 +79,7 @@ button:hover {
   background-color: rgb(212, 212, 212);
 }
 
-button:active{
+button:active {
   box-shadow: none;
 }
 
@@ -97,9 +97,9 @@ input[type='text'] {
   margin: 0;
   top: -1.6rem;
   left: 0;
-  padding: .3rem;
+  padding: 0.3rem;
   background-color: gray;
-  font-size: .7rem;
+  font-size: 0.7rem;
   border: 1px solid black;
   z-index: 1000;
 }
