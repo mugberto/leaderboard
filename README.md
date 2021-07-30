@@ -1,6 +1,10 @@
 # Leaderboard
-This app scores submitted by different players. It also allows you to submit your score.
 
+This app uses an API to store scores submitted by players and displays a list of the most recent scores.
+
+## Screenshot
+
+![Screenshot](./leaderboardScreenshot.png)
 
 ## Built With
 
